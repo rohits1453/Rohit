@@ -1,0 +1,59 @@
+Types of Cyber and Network Security Attacks
+This tutorial explains the most common types of network security attacks. Learn the terminology that is used to describe the basic types of cyber-security attacks.
+
+Security professionals use specialized terminology to describe cyber-attacks in white papers, audit reports, discussion forums, books, and more. If you know this terminology, you can manage and secure your network more confidently.
+
+In the following section, we will discuss some of the most common terms of this terminology that describe various types of network security attacks.
+
+Adversary
+An adversary is someone who attacks your network for some evil purpose. An adversary is also known as a hacker or cracker. An adversary can launch a variety of attacks. The following are the most common types of attacks.
+
+Reconnaissance Attack
+In this attack, an adversary collects information about your network. He uses this information to launch other attacks. This information includes IP address range, server location, running OS, software version, types of devices, etc. Packet capturing software, ping command, traceroot command, whois lookup are some example tools that can be used to collect this information. An adversary uses this information to map your infrastructure for the next possible attack.
+
+Passive attack
+In this attack, an adversary deploys a sniffer tool and waits for sensitive information to be captured. This information can be used for other types of attacks. It includes packet sniffer tools, traffic analysis software, filtering clear text passwords from unencrypted traffic, and seeking authentication information from unprotected communication. Once an adversary found any sensitive or authentication information, he will use that without the knowledge of the user.
+
+Active Attack
+In this attack, an adversary does not wait for any sensitive or authentication information. He actively tries to break or bypass the secured systems. It includes viruses, worms, Trojan horses, stealing login information, inserting malicious code, and penetrating network backbone. Active attacks are the most dangerous. They result in disclosing sensitive information, modification of data, or complete data loss.
+
+Distributed Attack
+In this attack, an adversary hides malicious code in trusted software. Later, this software is distributed to many other users through the internet without their knowledge. Once an end-user installs an infected software, it silently starts sending sensitive information to the adversary. Pirated software is heavily used for this purpose.
+
+Insider Attack
+According to a survey, more than 70% of attacks are performed by insiders. Insider attacks are divided into two categories: intentionally and accidentally. In an intentional attack, an attacker intentionally damages network infrastructure or data. Usually, intentional attacks are done by disgruntled or frustrated employees for money or revenge. In an accidental attack, damages are done by carelessness or lack of knowledge.
+
+Phishing Attack
+Phishing attacks are gaining popularity in the last couple of years. In this attack, an adversary creates a fake email address or a website that looks like a reputed mail address or popular site. Later the attacker sends an email using their name. These emails contain a convincing message, sometimes with a link that leads to a fake site. This fake site looks the same as the original site. Without knowing the truth, the user tries to log in with their account information, the hacker records this authentication information and uses it on a real site.
+
+Hijack attack
+This attack usually takes place between running sessions. The hacker joins a running session and silently disconnects the other party. Then, he starts communicating with the active party by using the identity of the disconnected party. The active party thinks that he is talking with the original party and may send sensitive information to the hacker.
+
+Spoof attack
+In this type of attack, an adversary changes the source's address of the packet so the receiver assumes that the packet comes from someone else. This technique is typically used to bypass the firewall rules.
+
+Buffer overflow attack
+This attack is part of the DoS technique. In this attack, an adversary sends more data to an application than its buffer size. It fails in service. This attack is usually used to halt service or server.
+
+Exploit attack
+An exploit attack is used after a reconnaissance attack. Once an attacker learned from a reconnaissance attack which OS or software is running on the target system, he starts exploiting a vulnerability in that particular software or OS.
+
+Password attack
+In this attack, an adversary tries to log in with a guessed password. Two popular methods for this attack are dictionary attack and brute force attack. In the brute force method, an adversary tries with all possible combinations. In the dictionary method, an adversary tires with a word list of potential passwords.
+
+Packet capturing attack
+This attack is part of the passive attack. In this attack, an attacker uses packet capturing software which captures all packets from the wire. Later he extracts information from these packets. This information can be used to deploy several other types of attacks.
+
+Ping sweep attack
+In this attack, an attacker pings all possible IP addresses on a subnet to find out which hosts are up. Once he finds an up system, he tries to scan the listening ports. From listing ports, he can learn about the type of services running on that system. Once he figures out the services, he can try to exploit the vulnerabilities associated with those services.
+
+DNS Query attack
+DNS queries are used to discover information about the public server on the Internet. All OS includes the tool for DNS queries such as nslookup in Windows, dig and host in Linux. These tools query a DNS server for information about a specified domain. The DNS server responds with internal information such as Server IP address, Email Server, technical contacts, etc. An adversary can use this information in phishing or ping attack.
+
+MiTM attacks
+In this attack, an adversary captures data from the middle of transmission and changes it, then sends it again to the destination. Receiving person thinks that this message came from the original source. For example, in a share trading company, Jack is sending a message to Rick telling him to hold the shares. An adversary intercepts this message in a way that it looks like Jack is telling for sale. When Rick receives this message, he will think that Jack is telling for the sell and he will sell the shares. This is known as a Man-in-the-middle attack.
+
+Denial of Service Attacks
+DoS attack is a series of attacks. In this attack, an adversary tries to misuse legitimate services. Several networking tools are available for troubleshooting. An attacker uses these tools for evil purposes. For example, the ping command is used to test the connectivity between two hosts. An adversary can use this command to continuously ping a host with oversized packets. In such a situation, the target host will be too busy replying (of ping) that it will not be able to run other services.
+
+That's all for this tutorial. In this tutorial, we discussed some most common types of network security attacks.
