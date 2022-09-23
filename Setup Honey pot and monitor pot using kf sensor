@@ -1,0 +1,21 @@
+How to Establish a Honeypot on your Network
+A Honeypot is an information system resource whose value lies in unauthorized or illicit use of that resource. – Lance Spitzner
+
+As you might have guessed, the traffic which is attracted – and then diverted away or studied more closely, depending on the purpose – is of the malicious sort; that which comes from hackers, malware, and viruses.
+
+Why do you need a honeypot on your network?
+The main reason you need a honeypot on your network is because of the information it yields; something that no intrusion detection or prevention system can provide you with. Armed with the information, and the alerts they register, network administrators will become aware of the sort of attacks they are targeted for and have the fore-knowledge to figure out what they need to do to strengthen their defenses.
+
+With that being said, there are two types of honeypots:
+
+Corporate honeypot A honeypot that is set up in a production environment and serves as a tool for studying attacks to use the knowledge to further strengthen the internal network’s security.
+Research honeypot A honeypot that is used by researchers and with the hopes of studying attack methodologies and other characteristics like motives for attacks. Then, for example, using the knowledge to create defense solutions (antiviruses, anti-malware, etc.) that can prevent similar attacks in the future.
+The data types that honeypots capture from (or about) the attackers can include, but is not limited to:
+
+The usernames, roles, and privileges that the attackers use
+The IP addresses of the network or host that are being using for the attack
+What data is being accessed, altered or deleted
+The actual keystrokes the attackers type out, which lets administrators see exactly what they are doing
+Honeypots also help with keeping the attention of hackers diverted from the main network, averting the full force of an attack, until the administrators are ready to put the appropriate counter-action in place.
+
+Finally, we need to mention the pros and cons of using a honeypot on your network (here is one for each side):
