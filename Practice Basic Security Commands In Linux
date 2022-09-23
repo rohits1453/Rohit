@@ -1,0 +1,29 @@
+There are many aspects to security on Linux systems – from setting up accounts to ensuring that legitimate users have no more privilege than they need to do their jobs. This is look at some of the most essential security commands for day-to-day work on Linux systems.
+
+sudo
+Running privileged commands with sudo  – instead of switching user to root  – is one essential good practice as it helps to ensure that you only use root privilege when needed and limits the impact of mistakes. Your access to the sudo command depends on settings in the /etc/sudoers and /etc/group files.
+$ sudo adduser shark
+Adding user `shark' ...
+Adding new group `shark' (1007) ...
+Adding new user `shark' (1007) with group `shark' ...
+Creating home directory `/home/shark' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+Changing the user information for shark
+Enter the new value, or press ENTER for the default
+        Full Name []: shark
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] Y
+If you run sudo and ask who you are, for example, you'll get confirmation that you're running the command as root.
+
+$ sudo whoami
+root
+If you manage the sudo setup for users, you also need to be comfortable with the visudo command.
+
+visudo
+The visudo command allows you to make changes to the /etc/sudoers file by opening the file in a text editor and checking your changes for syntax. Run the command with “sudo visudo” and make sure that you understand the syntax. Privileges can be assigned by user or by group. On most Linux systems, the /etc/sudoers file will already be configured with groups like those shown below that allow the privileges to be assigned to groups set up in the /etc/group file. In those cases, you don’t need to use the visudo command at all  – just be familiar with the groups that bestow root privileges in this way, and make your updates to the /etc/group file.
